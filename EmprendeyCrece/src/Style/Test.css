@@ -1,0 +1,22 @@
+.img1 {
+    background-image: url(../imagenes/cinco.jpg);
+}
+.img2 {
+    background-image: url(../imagenes/cuatro.jpg);
+}
+.img3 {
+    background-image: url(../imagenes/tres.jpg);
+}
+.img4 {
+    background-image: url(../imagenes/dos.jpg);
+}
+.img5 {
+    background-image: url(../imagenes/uno.jpg);
+}
+.card-header {
+    width: 340px;
+    height: 340px;
+}
+.carrousel-cards{
+   display: grid;
+}

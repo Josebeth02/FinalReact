@@ -1,5 +1,5 @@
 import React from 'react'
-import RegisterComp from '../components/RegisterComp'
+import RegisterComp from '../Components/RegisterComp'
 
 function Register() {
   return (
