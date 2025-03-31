@@ -4,6 +4,7 @@ import hombre from "../../imagenes/hombre.jpg"
 import niña from "../../imagenes/niña.avif"
 import 'bootstrap/dist/css/bootstrap.css'
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import './Carrusel.css'
 
 
 function Carrusel() {
@@ -14,6 +15,7 @@ function Carrusel() {
 
 <div>
 
+<div className='carrusel-cont'>
 <div id="carouselExample" class="carousel slide">
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -39,7 +41,7 @@ function Carrusel() {
   </button>
 </div>
 
-
+</div>
 </div>
 </div>
 

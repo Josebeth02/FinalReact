@@ -1,6 +1,6 @@
-async function getTareas() {
+async function getProductos() {
     try {
-        const response = await fetch('http://localhost:3000/pagPrincipal', {
+        const response = await fetch('http://localhost:3000/productos', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -19,20 +19,23 @@ async function getTareas() {
     }
 }
 
-
 //////////LLAMADO POST//////////
 
-async function postTareas(tarea) {
+async function postProductos(Producto,Precio,Descripcion,Imagen,Categoria) {
     try {
      
         const userData = { 
-            
-            tarea
+            Producto,
+            Precio,
+            Descripcion,
+            Imagen,
+            Categoria
+        
         };
 
 
 
-        const response = await fetch("http://localhost:3000/pagPrincipal", {
+        const response = await fetch("http://localhost:3000/productos", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -53,40 +56,37 @@ async function postTareas(tarea) {
 
 //////////////LLAMADO UPDATE/////////////
 
-
-async function updateTareas(tarea,id) 
-{
+async function updateProductos(id, data) {
     try {
-     
-        const userData = { 
-            tarea
-        
-        };
-
-
-        const response = await fetch("http://localhost:3000/pagPrincipal/"+id, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(userData)
-        });
-
-     
-        return await response.json();
+      const response = await fetch(`http://localhost:3000/productos/${id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+  
+      if (!response.ok) {
+        // Manejar errores HTTP
+        const errorText = await response.text();
+        throw new Error(`Error HTTP: ${response.status} - ${errorText}`);
+      }
+  
+      return await response.json();
     } catch (error) {
-        console.error('Error update user:', error);
-        throw error;
+      console.error('Error update user:', error);
+      throw error;
     }
-}
+  }
+
 
 
 //////////////LLAMADO DELETE/////////////
 
 
-async function deleteTareas(id) {
+async function deleteProductos(id) {
     try {
-        const response = await fetch(`http://localhost:3000/pagPrincipal/${id}`, {
+        const response = await fetch(`http://localhost:3000/productos/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -104,4 +104,4 @@ async function deleteTareas(id) {
     }
 }
 
-export default {getTareas, postTareas,deleteTareas,updateTareas}
+export default {getProductos, postProductos,deleteProductos,updateProductos,}

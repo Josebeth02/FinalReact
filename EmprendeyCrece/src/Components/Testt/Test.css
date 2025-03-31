@@ -1,0 +1,47 @@
+.img1 {
+    background-image: url(../../imagenes/dos.jpg);
+    background-size: 100%;
+}
+.img2 {
+    background-image: url(../../imagenes/la-ropa-de-las-mujeres-del-verano-de-la-moda-fijó-con-los-cosméticos-y-los-accesorios-91535869.webp);
+    background-size: cover;
+
+}
+.img3 {
+    background-image: url(../../imagenes/tres.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.img4 {
+    background-image: url(../../imagenes/dos.jpg);
+    background-size: 100%;
+
+}
+.img5 {
+    background-image: url(../../imagenes/uno.jpg);
+    background-size: 100% 100%;
+
+}
+.card-header {
+    width: 100%;
+    height: 200px;
+}
+.cards {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; */
+    display: flex;
+
+
+}
+.itemCard {
+    border: solid;
+}
+.liCar{
+    color: white;
+}
+.imm{
+    height: 180px;
+    width: 200px;
+  }

@@ -1,5 +1,5 @@
 import React from 'react'
-import TestCompo from '../Components/TestComp'
+import TestCompo from '../Components/Testt/TestComp'
 
 function test() {
   return (

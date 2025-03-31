@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, #9b1c31, #7a0c23); /* Rojo y vino */
+    border-radius: 10px;
+    color: white;
+  }
+  .info-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .info-header h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 50px;
+  }
+  .info-header h3 {
+    font-size: 2rem;
+    color: #9b1c31;
+    margin-top: 0.5rem;
+  }
+  .info-content {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+  }
+  .info-content h2 {
+    font-size: 2.2rem;
+    color: #9b1c31; /* Rojo */
+    margin-bottom: 1.5rem;
+  }
+  .info-subtitle {
+    font-size: 1.6rem;
+    color: #7a0c23; /* Vino */
+    margin-top: 1.5rem;
+  }
+  .info-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+  .info-list li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+  }
+  .info-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #9b1c31; 
+    font-size: 1.5rem;
+  }
+  .info-footer {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  .info-footer strong {
+    color: #9b1c31; 
+  }
+    .info-header h1 {
+      font-size: 2.8rem;
+    }
+  .rs{
+    color: white;
+  }
+  

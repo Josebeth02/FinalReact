@@ -27,7 +27,8 @@ async function postUsers(nombre,email,contrasena) {
         const userData = { 
             nombre,
             email,
-            contrasena
+            contrasena,
+            rol: "usuario"
         
         };
 
